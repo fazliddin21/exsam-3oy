@@ -1,0 +1,122 @@
+.hero {
+  background: #edf3f8;
+  padding: 74px 0 151px;
+  position: relative;
+}
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.hero-bg-img {
+  width: 263px;
+  height: 500px;
+  background-image: url("../../img/hero-phone-bg.svg");
+  background-repeat: no-repeat;
+  background-size: 263px 500px;
+}
+.hero-content {
+  width: 100%;
+  max-width: 546px;
+}
+.hero-title {
+  color: #36536b;
+  font-family: DM Serif Display;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.554px;
+  padding-bottom: 21px;
+}
+.hero-form {
+  position: relative;
+}
+.hero-input {
+  border-radius: 24px;
+  background: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border: none;
+  outline: none;
+  padding: 16px 103px 14px 27px;
+  color: #36536b;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 700;
+  &:hover {
+    opacity: 1;
+  }
+}
+.hero-btn {
+  position: absolute;
+  right: 103px;
+}
+.hero-text {
+  color: #6c8294;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 16px 0 0;
+}
+.hero-link {
+  color: #6c8294;
+  font-weight: 700;
+}
+@media only screen and(max-width:822px) {
+  .hero {
+    padding: 53px 0 99px;
+  }
+  .hero-inner {
+    display: block;
+    margin: 0 auto;
+  }
+  .hero-bg-img {
+    margin: 0 auto;
+    width: 159px;
+    height: 300px;
+    background-size: 159px 300px;
+  }
+  .hero-content {
+    margin: 0 auto;
+  }
+  .hero-title {
+    text-align: center;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .hero-form {
+    text-align: center;
+  }
+  .hero-btn {
+    right: 70px;
+  }
+  .hero-text {
+    text-align: center;
+  }
+}
+
+@media only screen and(max-width:588px) {
+  .hero-input {
+    display: block;
+    width: 327px;
+    margin: 0 auto 16px;
+    padding-right: 158px;
+  }
+  .hero-btn {
+    position: static;
+    padding: 16px 50px 14px 46px;
+    max-width: 327px;
+    width: 100%;
+  }
+}
+@media only screen and(max-width:510px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 58px;
+  }
+}
+@media only screen and(max-width:375px) {
+  .hero-title {
+    font-size: 34px;
+    line-height: 36px;
+  }
+}
